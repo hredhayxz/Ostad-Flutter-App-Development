@@ -18,41 +18,39 @@ abstract class Animal {
 }
 
 class Dog extends Animal {
-  Dog(String name, int age, String species)
-      : super(name, age, species);
+  Dog(String name, int age, String species) : super(name, age, species);
 
   @override
-  void makeSound() {
+  String makeSound() {
     return "Woof!";
   }
 
   @override
-  void eat() {
+  String eat() {
     return "I eat dog food!";
   }
 
   @override
-  void sleep() {
+  String sleep() {
     return "I sleep on the couch!";
   }
 }
 
 class Cat extends Animal {
-  Cat(String name, int age, String species)
-      : super(name, age, species);
+  Cat(String name, int age, String species) : super(name, age, species);
 
   @override
-  void makeSound() {
-   return "Meow!";
+  String makeSound() {
+    return "Meow!";
   }
 
   @override
-  void eat() {
+  String eat() {
     return "I eat cat food!";
   }
 
   @override
-  void sleep() {
+  String sleep() {
     return "I sleep in a box!";
   }
 }
