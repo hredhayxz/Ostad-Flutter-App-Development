@@ -23,17 +23,17 @@ class Dog extends Animal {
 
   @override
   void makeSound() {
-    print("Woof!");
+    return "Woof!";
   }
 
   @override
   void eat() {
-    print("I eat dog food!");
+    return "I eat dog food!";
   }
 
   @override
   void sleep() {
-    print("I sleep on the couch!");
+    return "I sleep on the couch!";
   }
 }
 
@@ -43,17 +43,17 @@ class Cat extends Animal {
 
   @override
   void makeSound() {
-    print("Meow!");
+   return "Meow!";
   }
 
   @override
   void eat() {
-    print("I eat cat food!");
+    return "I eat cat food!";
   }
 
   @override
   void sleep() {
-    print("I sleep in a box!");
+    return "I sleep in a box!";
   }
 }
 
@@ -61,11 +61,11 @@ void main() {
   Dog dog = Dog("Buddy", 5, "Canine");
   Cat cat = Cat("Whiskers", 3, "Feline");
 
-  dog.makeSound();
-  dog.eat();
-  dog.sleep();
+  print(dog.makeSound());
+  print(dog.eat());
+  print(dog.sleep());
 
-  cat.makeSound();
-  cat.eat();
-  cat.sleep();
+  print(cat.makeSound());
+  print(cat.eat());
+  print(cat.sleep());
 }
